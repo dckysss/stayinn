@@ -1,0 +1,33 @@
+.speech-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.speech-btn img {
+    width: 28px;
+    border-radius: 50%;
+    padding: 0.2rem;
+}
+
+.speech-container {
+    border-right: 1px #febb02 solid;
+}
+
+.listening {
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: rgba(255, 54, 54, 0.479);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
