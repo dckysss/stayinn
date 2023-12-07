@@ -3,7 +3,7 @@ import "./featured.css";
 
 const Featured = () => {
   const { data, loading, error } = useFetch(
-    "/hotels/countByCity?cities=jakarta,yogyakarta,bali"
+    "https://ill-cyan-bat-kilt.cyclic.app/api/hotels/countByCity?cities=jakarta,yogyakarta,bali"
   );
 
   return (
