@@ -21,6 +21,12 @@
   gap: 40px;
   margin-bottom: 50px;
   overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.headerList::-webkit-scrollbar {
+  display: none;
 }
 
 .headerListItem {
@@ -75,7 +81,8 @@
   .headerSearch {
     height: auto;
     border: none;
-    width: 95%;
+    width: 90%;
+    margin-top: 20px;
     padding: 5px 5px;
     flex-direction: column;
     background-color: #febb02;
@@ -108,10 +115,10 @@
   }
 
   .headerContainer {
-    margin: 20px 0px 50px 0px;
+    margin: 20px 0px 40px 0px;
   }
   
-  .headerTitle, .headerDesc {
+  .container {
     padding: 0 10px;
   }
 }

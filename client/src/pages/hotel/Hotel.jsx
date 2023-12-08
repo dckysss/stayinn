@@ -33,7 +33,7 @@ const Hotel = () => {
   const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
   function dayDifference(date1, date2) {
     const timeDiff = Math.abs(date2.getTime() - date1.getTime());
-    const diffDays = Math.ceil(timeDiff / MILLISECONDS_PER_DAY);
+    const diffDays = Math.max(1, Math.ceil(timeDiff / MILLISECONDS_PER_DAY));
     return diffDays;
   }
 
@@ -44,11 +44,13 @@ const Hotel = () => {
     }).format(number);
   }
 
+  const days = dates[0] && dates[0].endDate
+    ? dayDifference(dates[0].endDate, dates[0].startDate)
+    : 1;
+  const roomPrice = options && options.room ? options.room : 1;
+  const totalPrice = days * data.cheapestPrice * roomPrice;
+  const formattedTotalPrice = rupiah(totalPrice);
   const costs = rupiah(data.cheapestPrice);
-  const days = dayDifference(dates[0].endDate, dates[0].startDate);
-
-  const nightlyPrice = rupiah(data.cheapestPrice);
-  const totalCost = rupiah(costs * days * options.room);
 
   const handleOpen = (i) => {
     setSlideNumber(i);
@@ -142,10 +144,10 @@ const Hotel = () => {
               <div className="hotelDetailsPrice">
                 <h1>Perfect for a {days}-night stay!</h1>
                 <span>
-                  {data.desc}
+                  Book your room for the best stay now before it gets booked out!
                 </span>
                 <h2>
-                  <b>Rp{days * data.cheapestPrice * options.room}</b> ({days}{" "}
+                  <b>{formattedTotalPrice}</b> ({days}{" "}
                   nights)
                 </h2>
                 <button onClick={handleClick}>Reserve or Book Now!</button>

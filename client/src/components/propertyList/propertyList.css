@@ -16,6 +16,12 @@
   display: flex;
   gap: 20px;
   overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pListContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .pListImg{

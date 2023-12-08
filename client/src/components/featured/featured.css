@@ -20,6 +20,12 @@
   display: flex;
   overflow-x: auto;
   gap: 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.itemContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .featuredImg{
