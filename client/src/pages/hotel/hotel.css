@@ -150,3 +150,61 @@
   color: lightgray;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .hotelWrapper {
+    width: 95%;
+  }
+
+  .bookNow {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .hotelTitle {
+    font-size: 20px;
+  }
+
+  .hotelAddress {
+    font-size: 10px;
+  }
+
+  .hotelDistance,
+  .hotelPriceHighlight {
+    font-size: 12px;
+  }
+
+  .hotelImages {
+    flex-direction: column;
+  }
+
+  .hotelImgWrapper {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .hotelDetails {
+    flex-direction: column;
+  }
+
+  .hotelDetailsTexts {
+    flex: 1;
+  }
+
+  .hotelDetailsPrice {
+    flex: 1;
+  }
+
+  .sliderImg {
+    height: 60vh;
+  }
+
+  .close {
+    font-size: 24px;
+  }
+
+  .arrow {
+    font-size: 30px;
+  }
+}

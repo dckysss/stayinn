@@ -107,3 +107,24 @@
   cursor: pointer;
   border-radius: 5px;
 }
+
+@media (max-width: 580px) {
+  .searchItem {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .siDesc {
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .siDetails {
+    margin-top: 10px;
+  }
+
+  .siDetailTexts {
+    text-align: center;
+  }
+}
