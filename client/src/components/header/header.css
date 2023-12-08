@@ -20,6 +20,7 @@
   display: flex;
   gap: 40px;
   margin-bottom: 50px;
+  overflow: auto;
 }
 
 .headerListItem {
@@ -56,10 +57,63 @@
   justify-content: space-around;
   padding: 10px 0px;
   border-radius: 5px;
+}
+
+.searchContainer {
   position: absolute;
   bottom: -25px;
-  width: 100%;
   max-width: 1024px;
+  width: 100%;
+}
+
+.headerSearchItemContainer {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 1040px) {
+  .headerSearch {
+    height: auto;
+    border: none;
+    width: 95%;
+    padding: 5px 5px;
+    flex-direction: column;
+    background-color: #febb02;
+    gap: 4px;
+  }
+
+  .searchContainer {
+    display: flex;
+    position: static;
+    justify-content: center;
+  }
+
+  .headerSearchItem {
+    width: 100%;
+    background-color: white;
+    min-height: 40px;
+  }
+
+  .headerSearchItemContainer {
+    width: 100%;
+    background-color: white;
+  }
+
+  .headerList {
+    padding: 10px;
+  }
+
+  .headerBtn {
+    width: 100%;
+  }
+
+  .headerContainer {
+    margin: 20px 0px 50px 0px;
+  }
+  
+  .headerTitle, .headerDesc {
+    padding: 0 10px;
+  }
 }
 
 .headerIcon {

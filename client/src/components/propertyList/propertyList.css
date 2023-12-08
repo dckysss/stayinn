@@ -2,15 +2,20 @@
   width: 100%;
   max-width: 1024px;
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
 }
 
 .pListItem{
   flex:1;
   border-radius: 10px;
+  min-width: 180px;
   overflow: hidden;
   cursor: pointer;
+}
+
+.pListContainer {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
 }
 
 .pListImg{
@@ -28,4 +33,10 @@
 .pListTitles>h2{
   font-size: 14px;
   font-weight: 300;
+}
+
+@media (max-width: 1040px) {
+  .pListContainer {
+    padding: 0 5px;
+  }
 }

@@ -11,7 +11,7 @@ const Featured = () => {
       {loading ? (
         "Loading please wait"
       ) : (
-        <>
+        <div className="itemContainer">
           <div className="featuredItem">
             <img
               src="https://cf.bstatic.com/xdata/images/city/600x600/688053.jpg?k=da426cecdc6492da255ca0612c4bb41bd785b2565c83405f7281f15c05b16376&o="
@@ -46,7 +46,7 @@ const Featured = () => {
               <h2>{data[2]} properties</h2>
             </div>
           </div>
-        </>
+        </div>
       )}
     </div>
   );

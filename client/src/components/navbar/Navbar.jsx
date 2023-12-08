@@ -16,7 +16,7 @@ const Navbar = () => {
           </div>
         </Link>
         {user ?
-          <div>hi, {user.username} <Logout /></div>
+          <div className="">hi, {user.username} <Logout /></div>
           : (
             <div className="navItems">
               <Link to="/register" className="navLink">Register</Link>

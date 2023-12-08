@@ -2,7 +2,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="fLists">
         <ul className="fList">
           <li className="fListItem">Countries</li>
@@ -21,19 +21,6 @@ const Footer = () => {
           <li className="fListItem">Guest houses</li>
         </ul>
         <ul className="fList">
-          <li className="fListItem">Unique places to stay </li>
-          <li className="fListItem">Reviews</li>
-          <li className="fListItem">Unpacked: Travel articles </li>
-          <li className="fListItem">Travel communities </li>
-          <li className="fListItem">Seasonal and holiday deals </li>
-        </ul>
-        <ul className="fList">
-          <li className="fListItem">Car rental </li>
-          <li className="fListItem">Flight Finder</li>
-          <li className="fListItem">Restaurant reservations </li>
-          <li className="fListItem">Travel Agents </li>
-        </ul>
-        <ul className="fList">
           <li className="fListItem">Curtomer Service</li>
           <li className="fListItem">Partner Help</li>
           <li className="fListItem">Careers</li>
@@ -45,7 +32,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="fText">Copyright © 2023 StayInn.</div>
-    </div>
+    </footer>
   );
 };
 

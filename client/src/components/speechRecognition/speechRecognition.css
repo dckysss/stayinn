@@ -2,6 +2,7 @@
     background: none;
     border: none;
     cursor: pointer;
+    padding: 0;
 }
 
 .speech-btn img {
@@ -11,7 +12,9 @@
 }
 
 .speech-container {
+    display: flex;
     border-right: 1px #febb02 solid;
+    align-items: center;
 }
 
 .listening {
@@ -29,5 +32,15 @@
 
     100% {
         background-color: transparent;
+    }
+}
+
+@media (max-width: 1040px) {
+    .speech-container {
+        border: none;
+    }
+
+    .speech-btn img {
+        padding: 0;
     }
 }

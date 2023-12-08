@@ -8,6 +8,7 @@
 
 .fpItem{
   flex: 1;
+  flex-basis: 240px;
   gap: 10px;
   display: flex;
   flex-direction: column;
@@ -44,4 +45,14 @@
 
 .fpRating>span{
   font-size: 14px;
+}
+
+@media (max-width: 1040px) {
+  .fp {
+    flex-wrap: wrap;
+  }
+
+  .fpItem {
+    padding: 0 5px;
+  }
 }

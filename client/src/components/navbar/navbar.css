@@ -19,7 +19,7 @@
 }
 
 .navLink{
-  margin-left: 20px;
+  margin-left: 15px;
   border: none;
   padding: 6px 12px;
   cursor: pointer;
@@ -28,4 +28,10 @@
   font-weight: 600;
   text-decoration: none;
   background-color: white;
+}
+
+@media (max-width: 1040px) {
+  .navContainer {
+    padding: 10px;
+  }
 }
