@@ -1,4 +1,6 @@
 import "./footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -31,7 +33,11 @@ const Footer = () => {
           <li className="fListItem">Terms & conditions</li>
         </ul>
       </div>
-      <div className="fText">Copyright © 2023 StayInn.</div>
+
+      <div className="fText">
+        <a className="socmed" href="https://www.instagram.com/stayinn_apps/"><FontAwesomeIcon icon={faInstagram} size="3x" /></a>
+        <p>Copyright © 2023 StayInn.</p>
+      </div>
     </footer>
   );
 };
