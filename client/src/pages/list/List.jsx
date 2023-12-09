@@ -18,7 +18,7 @@ const List = () => {
   const [max, setMax] = useState(undefined);
 
   const { data, loading, error, reFetch } = useFetch(
-    `https://ill-cyan-bat-kilt.cyclic.app/api/hotels?city=${destination}&min=${min || 0}&max=${max || 999}`
+    `https://stayinn.up.railway.app/api/hotels?city=${destination}&min=${min || 0}&max=${max || 999}`
   );
 
   const handleClick = () => {

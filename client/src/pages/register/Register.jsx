@@ -26,7 +26,7 @@ const Register = () => {
         e.preventDefault();
         dispatch({ type: "REGISTER_START" });
         try {
-            const res = await axios.post("https://ill-cyan-bat-kilt.cyclic.app/api/auth/register", credentials);
+            const res = await axios.post("https://stayinn.up.railway.app/api/auth/register", credentials);
             dispatch({ type: "REGISTER_SUCCESS", payload: res.data.details });
             navigate("/login");
         } catch (err) {

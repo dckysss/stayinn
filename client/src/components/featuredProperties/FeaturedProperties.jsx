@@ -3,7 +3,7 @@ import useFetch from "../../hooks/useFetch";
 import "./featuredProperties.css";
 
 const FeaturedProperties = () => {
-  const { data, loading, error } = useFetch("https://ill-cyan-bat-kilt.cyclic.app/api/hotels?featured=true&limit=4");
+  const { data, loading, error } = useFetch("https://stayinn.up.railway.app/api/hotels?featured=true&limit=4");
 
   const rupiah = (number) => {
     return new Intl.NumberFormat("id-ID", {
