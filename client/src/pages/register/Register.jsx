@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import "./register.css";
 
@@ -82,6 +82,7 @@ const Register = () => {
                 <button disabled={loading} onClick={handleClick} className="rButton">
                     Register
                 </button>
+                <Link to="/login">Already have an account?</Link>
                 {error && <span>{error.message}</span>}
             </div>
         </div>

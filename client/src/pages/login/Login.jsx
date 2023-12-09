@@ -2,6 +2,7 @@ import axios from "axios";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
+import { Link } from "react-router-dom";
 import "./login.css";
 
 const Login = () => {
@@ -51,6 +52,7 @@ const Login = () => {
         <button disabled={loading} onClick={handleClick} className="lButton">
           Login
         </button>
+        <Link to="/register">Don't have an account yet?</Link>
         {error && <span>{error.message}</span>}
       </div>
     </div>
