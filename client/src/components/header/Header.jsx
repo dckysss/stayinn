@@ -103,7 +103,10 @@ const Header = ({ type }) => {
                 Get rewarded for your travels – unlock instant savings of 10% or
                 more with a free StayInn account
               </p>
-              {!user && <Link to="/login" className="headerBtn">Sign in / Register</Link>}
+              {!user &&
+                <Link to="/login">
+                  <button className="headerBtn">Sign in / Register</button>
+                </Link>}
             </div>
             <div className="searchContainer">
               <div className="headerSearch">
