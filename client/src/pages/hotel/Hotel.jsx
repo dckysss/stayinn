@@ -153,7 +153,9 @@ const Hotel = () => {
                 <button onClick={handleClick}>Reserve or Book Now!</button>
               </div>
             </div>
-            <iframe width="420" height="315" title="360video" src="https://www.youtube.com/embed/JBXb16k_8g0" frameborder="0"></iframe>
+            <div className="video">
+              <iframe title="360video" src="https://www.youtube.com/embed/JBXb16k_8g0" frameborder="0"></iframe>
+            </div>
           </div>
           <MailList />
           <Footer />
