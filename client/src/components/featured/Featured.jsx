@@ -10,6 +10,8 @@ const Featured = () => {
     <div className="featured">
       {loading ? (
         "Loading please wait..."
+      ) : error ? (
+        <div>Failed to fetch data: {error.message} or API is currently offline</div>
       ) : (
         <div className="itemContainer">
           <div className="featuredItem">

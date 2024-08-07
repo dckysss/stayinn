@@ -16,6 +16,8 @@ const FeaturedProperties = () => {
     <div className="fp">
       {loading ? (
         "Loading..."
+      ) : error ? (
+        <div>Failed to fetch data: {error.message} or API is currently offline</div>
       ) : (
         <>
           {data.map((item) => (
